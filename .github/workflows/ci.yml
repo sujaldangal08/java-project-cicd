@@ -21,7 +21,7 @@ jobs:
 
     # - name: Build with Gradle
     #   run: ./gradlew build
-      
+
     steps:
     - uses: actions/checkout@v3
       name: Check out code
@@ -29,7 +29,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
       with:
-        image: spryamni/demo-app
+        image: sujaldangal/demo-app
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
